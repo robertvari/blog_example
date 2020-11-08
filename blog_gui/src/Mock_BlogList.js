@@ -1,4 +1,4 @@
-export const MockData = [
+export const Mock_BlogList = [
     {
         id: 0,
         title: "Caching in Python Using the LRU Cache Strategy",

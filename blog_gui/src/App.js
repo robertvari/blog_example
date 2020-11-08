@@ -1,22 +1,25 @@
 import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+
+
 import Navbar from "./compotents/Navbar";
-import BlogList from "./compotents/BlogList";
-import LatestCard from "./compotents/LatestCard";
+import Home from "./compotents/Home";
+import BlogDetails from "./compotents/BlogDetails";
 
 function App() {
   return (
-    <div>
-      <Navbar/>
+    <Router>
+        <Navbar/>
 
-      <div className="content_container">
-        <BlogList/>
-
-        <div>
-            <LatestCard/>
-        </div>
-
-      </div>
-    </div>
+        <Switch>
+            <Route path="/details" component={BlogDetails}/>
+            <Route path="/" component={Home}/>
+        </Switch>
+    </Router>
   );
 }
 

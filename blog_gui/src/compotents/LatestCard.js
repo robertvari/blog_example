@@ -1,5 +1,6 @@
 import React from 'react';
-import {MockData} from "../MockData";
+import {Link} from "react-router-dom";
+import {Mock_BlogList} from "../Mock_BlogList";
 import "../styles/LatestCard.css"
 
 function LatestCard(props) {
@@ -11,9 +12,9 @@ function LatestCard(props) {
 
             <div className="latest_body">
                 {
-                    MockData.map(data =>
+                    Mock_BlogList.map(data =>
                         <div>
-                            <a href="">{data.title}</a>
+                            <Link to="/details">{data.title}</Link>
                         </div>
                     )
                 }

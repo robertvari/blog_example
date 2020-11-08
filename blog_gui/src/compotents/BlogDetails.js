@@ -1,9 +1,30 @@
 import React from 'react';
+import {Mock_BlogDetails} from "../Mock_BlogDetails";
 import "../styles/BlogDetails.css"
 
 function BlogDetails(props) {
+    const {
+        title,
+        card_body,
+        body,
+        author,
+        created
+    } = Mock_BlogDetails
+
     return (
-        <div></div>
+        <div className="details_container">
+            <h1>{title}</h1>
+            <hr/>
+            <h4>{card_body}</h4>
+            <br/>
+            <p>{body}</p>
+            <hr/>
+
+            <div>
+                <small>{author}</small>
+                <small>{created}</small>
+            </div>
+        </div>
     );
 }
 

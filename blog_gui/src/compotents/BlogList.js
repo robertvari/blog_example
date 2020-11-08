@@ -3,15 +3,11 @@ import BlogCard from "./BlogCard";
 import {MockData} from "../MockData";
 
 function BlogList(props) {
-    console.log(MockData)
-
     return (
         <div>
-            <BlogCard/>
-            <BlogCard/>
-            <BlogCard/>
-            <BlogCard/>
-            <BlogCard/>
+            {
+               MockData.map(data => <BlogCard key={data.id} blog_data={data}/>)
+            }
         </div>
     );
 }

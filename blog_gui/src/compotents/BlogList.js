@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import axios from "axios"
 import BlogCard from "./BlogCard";
 
 
@@ -6,7 +7,12 @@ function BlogList(props) {
     const [posts, set_posts] = useState([])
 
     const fetch_posts = () => {
-        console.log("Get post list from API")
+        axios({
+            method: "get",
+            url: "http://127.0.0.1:8000/api/"
+        })
+            .then(res => console.log(res.data))
+            .catch(err => console.log(err))
     }
 
     useEffect(() =>{

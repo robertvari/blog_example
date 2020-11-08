@@ -1,0 +1,14 @@
+.latest_card_container {
+    margin-bottom: 20px;
+    padding: 25px;
+    border-radius: 20px;
+    border: 1px solid #d0d0d0;
+    position: sticky;
+    top: 70px;
+}
+
+.latest_header {
+    border-bottom: 1px solid #d0d0d0;
+    margin-bottom: 20px;
+    padding-bottom: 10px
+}

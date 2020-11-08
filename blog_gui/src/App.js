@@ -11,7 +11,10 @@ function App() {
       <div className="content_container">
         <BlogList/>
 
-        <LatestCard/>
+        <div>
+            <LatestCard/>
+        </div>
+
       </div>
     </div>
   );

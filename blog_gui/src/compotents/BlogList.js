@@ -11,7 +11,7 @@ function BlogList(props) {
             method: "get",
             url: "http://127.0.0.1:8000/api/"
         })
-            .then(res => console.log(res.data))
+            .then(res => set_posts(res.data))
             .catch(err => console.log(err))
     }
 

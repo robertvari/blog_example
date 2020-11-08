@@ -13,7 +13,7 @@ function LatestCard(props) {
             <div className="latest_body">
                 {
                     Mock_BlogList.map(data =>
-                        <div>
+                        <div key={data.id}>
                             <Link to="/details">{data.title}</Link>
                         </div>
                     )

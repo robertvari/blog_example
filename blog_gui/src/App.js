@@ -8,8 +8,11 @@ function App() {
     <div>
       <Navbar/>
 
-      <BlogList/>
-      <LatestCard/>
+      <div className="content_container">
+        <BlogList/>
+
+        <LatestCard/>
+      </div>
     </div>
   );
 }

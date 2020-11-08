@@ -1,8 +1,15 @@
 import React from 'react';
+import BlogCard from "./BlogCard";
 
 function BlogList(props) {
     return (
-        <div>Blog list...</div>
+        <div>
+            <BlogCard/>
+            <BlogCard/>
+            <BlogCard/>
+            <BlogCard/>
+            <BlogCard/>
+        </div>
     );
 }
 

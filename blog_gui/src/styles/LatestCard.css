@@ -12,3 +12,8 @@
     margin-bottom: 20px;
     padding-bottom: 10px
 }
+
+.latest_body a {
+    display: block;
+    margin-bottom: 10px;
+}

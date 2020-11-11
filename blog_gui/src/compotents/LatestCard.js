@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import {Mock_BlogList} from "../Mock_BlogList";
 import "../styles/LatestCard.css"
 
-function LatestCard(props) {
+function LatestCard({posts}) {
     return (
         <div className="latest_card_container">
             <div className="latest_header">
@@ -12,7 +12,7 @@ function LatestCard(props) {
 
             <div className="latest_body">
                 {
-                    Mock_BlogList.map(data =>
+                    posts.filter((item, index) => index < 5).map(data =>
                         <div key={data.id}>
                             <Link to="/details">{data.title}</Link>
                         </div>

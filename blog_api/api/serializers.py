@@ -23,3 +23,20 @@ class PostListSerializer(serializers.ModelSerializer):
             "created",
             "slug"
         ]
+
+
+class PostDetailsSerializer(serializers.ModelSerializer):
+    created = serializers.DateTimeField(format="%Y %b. %d %H:%M", read_only=True)
+    author = UserSerializer()
+
+    class Meta:
+        model = Post
+        fields = [
+            "id",
+            "title",
+            "card_body",
+            "body",
+            "author",
+            "created",
+            "slug"
+        ]

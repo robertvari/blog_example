@@ -14,7 +14,7 @@ function LatestCard({posts}) {
                 {
                     posts.filter((item, index) => index < 5).map(data =>
                         <div key={data.id}>
-                            <Link to="/details">{data.title}</Link>
+                            <Link to={"/posts/" + data.slug}>{data.title}</Link>
                         </div>
                     )
                 }

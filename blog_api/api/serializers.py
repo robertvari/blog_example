@@ -20,5 +20,6 @@ class PostListSerializer(serializers.ModelSerializer):
             "title",
             "card_body",
             "author",
-            "created"
+            "created",
+            "slug"
         ]

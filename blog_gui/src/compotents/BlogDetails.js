@@ -1,8 +1,11 @@
 import React from 'react';
+import {useParams} from "react-router-dom"
 import {Mock_BlogDetails} from "../Mock_BlogDetails";
 import "../styles/BlogDetails.css"
 
 function BlogDetails(props) {
+    const {slug} = useParams()
+
     const {
         title,
         card_body,
